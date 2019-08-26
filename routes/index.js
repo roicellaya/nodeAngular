@@ -19,6 +19,7 @@ router.post('/',
   middlewares.validateEmail,
   middlewares.validateIncome,
   function(req, res, next) {
+    // Save data on text file
     res.status(200).json({ success: true });
   }
 );
